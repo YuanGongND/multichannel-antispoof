@@ -21,13 +21,13 @@ We also include an unsplited complete set in the .zip package in case you want t
 
 
 ## Cite us:  
-If you use the data, please cite the following paper:
-
-Yuan Gong, Jian Yang, Jacob Huber, Mitchell MacKnight, Christian Poellabauer, ["ReMASC: Realistic Replay Attack Corpus for Voice Controlled Systems"](https://www.isca-speech.org/archive/Interspeech_2019/abstracts/1541.html), Interspeech 2019.
-
-If you use our neural network example, please cite the following paper:
+If you use our neural network code, please cite the following paper:
 
 Yuan Gong, Jian Yang, Christian Poellabauer, ["Detecting Replay Attacks Using Multi-Channel Audio: A Neural Network-Based Method"](https://arxiv.org/abs/2003.08225)  IEEE Signal Processing Letters, 2020.
+
+If you also use the data, please cite the following paper:
+
+Yuan Gong, Jian Yang, Jacob Huber, Mitchell MacKnight, Christian Poellabauer, ["ReMASC: Realistic Replay Attack Corpus for Voice Controlled Systems"](https://www.isca-speech.org/archive/Interspeech_2019/abstracts/1541.html), Interspeech 2019.
 
 ## How to run the code?
 TODO
