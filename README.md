@@ -43,7 +43,7 @@ Yuan Gong, Jian Yang, Jacob Huber, Mitchell MacKnight, Christian Poellabauer, ["
 
 **2. Select the hyper-parameters and run experiment**
 
-In ``src/full_exp.py``, line 81-91, the hyper-parameters are defined:
+In ``src/exp_full.py``, line 81-91, the hyper-parameters are defined:
 
 ```python
 bsize_list = [64]
@@ -56,6 +56,13 @@ mch_setting = [True]
 frame_time_list = [0.02]
 ```
 where ``bsize_list`` defines the list of batch size, ``lr_list`` defines the list of learning rate, ``rdevice_list`` defines the list of recording devices, ``audio_len_list`` defines the list of used audio length, ``filter_num_list`` defines the list of convolution filter number in the first layer, ``sr`` list defines the list of sampling rate (you must first convert the sample rate using ``src/uniform_sample_rate.py`` before runing experiments), ``mch_setting`` defines if use real multi-channel, this should be ``True`` unless you are running an ablation study, ``frame_time_list`` defines a list of frame window size in second. Note you can test different settings in one run by adding multiple values in a list (e.g., ``bsize_list=[8, 16, 32, 64]``), all hyper-parameter combination will be tested. Nevertheless, the running time grows exponentially.
+
+Then run:
+
+```python
+python src/exp_full.py -d 0 -n exp1 -s 0
+```
+where ``-d`` is for GPU device index; ``-n`` is for the experiment name, which will be the name in the ``exp\`` folder; ``-s`` is for the random seed. You should be see the loss and EER printed each epoach, the result will be stored in ``exp\exp_name``.
 
 **3. Use your own model**
 
