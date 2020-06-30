@@ -8,7 +8,7 @@ June, 30, 2020:
 - New uploads, might contain bugs
 
 ## Dataset
-**ReMASC Corpus** (92.3GB)
+**[ReMASC Corpus](https://github.com/YuanGongND/ReMASC)** (92.3GB)
 
 Data we used in the paper. Please download it from **\[[IEEE DataPort](https://ieee-dataport.org/open-access/remasc-realistic-replay-attack-corpus-voice-controlled-systems)]**,  it is free. You will need an [IEEE account](https://ieee-dataport.org/faq/how-do-i-access-dataset-ieee-dataport) to download, which is also free.
 
