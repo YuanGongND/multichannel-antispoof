@@ -30,7 +30,9 @@ If you also use the data, please cite the following paper:
 Yuan Gong, Jian Yang, Jacob Huber, Mitchell MacKnight, Christian Poellabauer, ["ReMASC: Realistic Replay Attack Corpus for Voice Controlled Systems"](https://www.isca-speech.org/archive/Interspeech_2019/abstracts/1541.html), Interspeech 2019.
 
 ## How to run the code?
+
 **1. Prepare the dataset**
+
 1) Clone the Github reporsitory. Download the ReMASC corpus from **\[[here](https://ieee-dataport.org/open-access/remasc-realistic-replay-attack-corpus-voice-controlled-systems)]** (it is completely free) and place it in the ``data/`` directory. 
 
 2) In ``src/constants.py``, line 9, change the ``PROJ_PATH`` to your project path.
@@ -56,6 +58,7 @@ frame_time_list = [0.02]
 where ``bsize_list`` defines the list of batch size, ``lr_list`` defines the list of learning rate, ``rdevice_list`` defines the list of recording devices, ``audio_len_list`` defines the list of used audio length, ``filter_num_list`` defines the list of convolution filter number in the first layer, ``sr`` list defines the list of sampling rate (you must first convert the sample rate using ``src/uniform_sample_rate.py`` before runing experiments), ``mch_setting`` defines if use real multi-channel, this should be ``True`` unless you are running an ablation study, ``frame_time_list`` defines a list of frame window size in second. Note you can test different settings in one run by adding multiple values in a list (e.g., ``bsize_list=[8, 16, 32, 64]``), all hyper-parameter combination will be tested. Nevertheless, the running time grows exponentially.
 
 **3. Use your own model**
+
 The model we propose is in ``src/model.py``, you can revise it or use your own model to replace it. 
 
 ## Questions
