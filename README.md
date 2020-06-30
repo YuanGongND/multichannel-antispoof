@@ -17,8 +17,7 @@ The complete set consists of two disjoint set:
 - **Core Set**: the suggest training and development set.
 - **Evaluation Set**: the suggest evaluation set. 
 
-We also include an unsplited complete set in the .zip package in case you want to customerize the data split. It is just a simple union of the core set and the evaluation set. 
-
+In this work, we do use the official core/evaluation split. 
 
 ## Cite us:  
 If you use our neural network code, please cite the following paper:
