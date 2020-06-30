@@ -32,7 +32,7 @@ Yuan Gong, Jian Yang, Jacob Huber, Mitchell MacKnight, Christian Poellabauer, ["
 
 **1. Prepare the dataset**
 
-1) Clone the Github reporsitory. Download the ReMASC corpus from **\[[here](https://ieee-dataport.org/open-access/remasc-realistic-replay-attack-corpus-voice-controlled-systems)]** (it is completely free) and place it in the ``data/`` directory. 
+1) Clone the Github reporsitory. Download the ReMASC corpus from **\[[here](https://ieee-dataport.org/open-access/remasc-realistic-replay-attack-corpus-voice-controlled-systems)]** (it is completely free) and place it in the ``data/`` directory. We test the code using ``torch==1.5.0``, ``torchaudio==0.4.0``, and ``numpy==1.18.4``. Check other dependencies we use in ``requirement.txt``.
 
 2) In ``src/constants.py``, line 9, change the ``PROJ_PATH`` to your project path.
 
